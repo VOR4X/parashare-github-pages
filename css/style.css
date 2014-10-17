@@ -1,0 +1,68 @@
+body {
+
+	background-image: url("../images/sandpaper.png");
+	font-family: "Open Sans";
+	color: rgb(28, 46, 40);
+}
+
+#brand1 {
+	color: rgb(19, 64, 55);
+}
+
+#wrapper {
+	background-image: url("../images/leparasol.jpg");
+	height: 575px;
+	background-size: cover;
+	padding-top: 150px;
+	color: rgb(28, 46, 40);
+}
+
+#wrapper h1 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 72px;
+  text-shadow: 0 0 20px rgba(28, 46, 40, .8);
+  font-weight: normal;
+  margin-left: 50px;
+}
+#wrapper h2 {
+  padding: 0.2em;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+  padding-left: 50px;
+}
+
+.annonce {
+	letter-spacing: 2px;
+	padding-left: 30px;
+	padding-bottom: 3em;
+}
+.feature p {
+	font-weight: 300px;
+	letter-spacing: 1px;
+}
+.feature img {
+	margin-bottom: 2em;
+}
+
+.spacer {
+	height: 8em;
+}
+
+#footer {
+	background-color: #0F0502;
+	color: #6DB59D;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+#footer a {
+	color: #6DB59D;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #95F7D7;
+}
+.social a {
+	font-size: 24px;
+}
