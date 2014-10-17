@@ -5,6 +5,37 @@ body {
 	color: rgb(28, 46, 40);
 }
 
+.navbar-transparent { 
+   background-color: rgba(15, 5, 2, 0.8); 
+   border-bottom: 1px solid #6DB59D;
+} 
+.navbar-transparent .navbar-brand, 
+.navbar-transparent .navbar-nav > li > a { 
+    color: #ABF7D7; 
+    line-height: 30px; 
+} 
+
+.navbar-transparent .navbar-nav > li > a:hover, 
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a, 
+.navbar-transparent .navbar-nav > .open > a:hover, 
+.navbar-transparent .navbar-nav > .open > a:focus { 
+    color: white;
+    background-color: rgba(15, 5, 2, 0.3); 
+} 
+ { 
+    color: red;
+    background-color: rgba(166, 66, 66, 0.3); 
+} 
+
+.navbar-transparent .navbar-brand:hover, 
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus { 
+    color: white; 
+}
+
+
 #brand1 {
 	color: rgb(19, 64, 55);
 }
