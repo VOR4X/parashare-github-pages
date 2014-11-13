@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Parashare, des rencontres sous un parasol</title>
+    <title>Parashare - contact</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -70,37 +70,47 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div id="wrapper">
-      <h1>PARASHARE</h1>
-      <h2>Ne bronzez plus seul, partagez votre parasol !</h2>
-    </div>
-
     <div class="spacer"></div>
 
-    <div class="annonce">
-      <h3>Grace à <span id="brand1"><strong>PARASHARE</strong></span>, rencontrez vos voisins de plage!</h3>
-    </div>
-
-    <div class="container text-center">
+    <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-3 feature">
-          <img src="images/icons/friend/icon_56421.png" alt="friends" width="48">
-          <p>de belles rencontres et la naissance d'amitiés indestructibles se profilent devant vous!</p>
+        <div class="col-sm-6">
+
+          <div id="map" style="width: 100%; height: 400px;"></div>
+
+          <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+          <script type="text/javascript">
+            var myLatlng = new google.maps.LatLng(43.3990751, 4.9819885);
+
+            var myOptions = {
+              zoom: 14,
+              center: myLatlng,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              styles: [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]},{"featureType":"landscape","stylers":[{"color":"#f2e5d4"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}]
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), myOptions);
+            var marker = new google.maps.Marker({
+              position: myLatlng,
+              map: map,
+              title:"You are here!"
+            });
+          </script>
+
+
         </div>
-        <div class="col-xs-6 col-md-3 feature">
-          <img src="images/icons/book/icon_8689.png" alt="book" width="48">
-          <p>quelqu'un avec qui discuter du dernier Pierre Bordage ou de San Antonio le Magnifique</p>
+        <div class="col-sm-6">
+          <h1>Contact</h1>
+          <p><i class="fa fa-map-marker"></i>  12 chemin de la Jetée<br>
+            13110 Port de Bouc<br></p>
+          <p><br><i class="fa fa-phone"></i>   04 42 35 36 37</p>
+
         </div>
-        <div class="col-xs-6 col-md-3 feature">
-          <img src="images/icons/backpack/icon_2551.png" alt="backpack" width="48">
-            <p>une occasion d'alléger votre sac de voyage pour vous concentrer sur l'essentiel</p>
-          </div>
-        <div class="col-xs-6 col-md-3 feature">
-          <img src="images/icons/cocktail/icon_809.png" alt="cocktail" width="48">
-          <p>de nouveau amis avec qui siroter des martinis et discuter tout l'apres midi!</p>
-        </div>  
       </div>
     </div>
+    
+
 
     <div class="spacer"></div>
 
